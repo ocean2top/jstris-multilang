@@ -4,8 +4,8 @@ return [
     //On screen captions
     'ready' => '준비',
     'go' => '시작!',
-    'notFocused' => '포커스 벗어남', //max 13 characters
-    'clickToFocus' => '클릭해서 포커스를 잡으세요', //max 30 characters
+    'notFocused' => '포커스 벗어남', //최대 13자
+    'clickToFocus' => '클릭해서 포커스를 잡으세요', //최대 30자
     'specMode' => '관전 중',
     'specModeInfo' => '관전 모드로 전환하였습니다.',
     'endSpec' => '/play를 입력해 게임에 참여하세요', //keep '/play'
@@ -18,8 +18,13 @@ return [
     'waitNext' => '라운드 종료까지 기다려주세요', // 표시 영역 너비를 감안해서 내용을 줄였습니다. '~하세요' 어투를 적용하려고 하는데 이 메세지는 졌을 때 나오는 거라서 '~해주세요' 어투를 썼습니다.
     'waitNext2' => '다음 라운드까지 기다려주세요.', // 채팅에 나타나는 메세지
     'pressStart' => '\'새 게임\'을 눌러 게임을 시작하세요', //'New game' should be same as in game.newGame
-    'slowDown' => 'SLOW DOWN', //When a speed limit is exceeded
+    'slowDown' => '너무 빨라요', //When a speed limit is exceeded
     'speedLimitIs' => '속도 제한:', //In a sentence: The speed limit is 2 PPS
+    'connecting' => '연결 중...',
+    'signingIn' => '로그인 중',
+    'loginFail' => '로그인 실패!',
+    'loginFail2' => '로그인하지 않아서 {name}(이)라는 이름의 게스트로 플레이합니다.',
+    'mapLoading' => '맵을 불러오는 중...',
 
     //Chat
     'warning' => '경고',
@@ -45,7 +50,8 @@ return [
     'welcomeIn' => '어서오세요. 현재 다음의 방에 들어오셨습니다:', //in 'Welcome in RoomName.'
     'noSpectators' => '관전 중인 사용자가 없습니다.',
     'replayAvailable' => '다시보기를 보려면', // 비로그인 사용자일 경우의 리플레이 메세지
-    'oldVer' => '구 버전을 실행하고 있습니다. CTRL+F5로 새 버전을 받으세요!',
+    'oldVer' => '구 버전을 실행하고 있습니다, CTRL+F5로 새 버전을 받으세요!',
+    'oldVer2' => '아직도 구 버젼을 실행하고 있습니다! {key}로 클라이언트를 새로고침 하세요.',
     'privateRoom' => '방해받지 않고 즐길 수 있는 비공개 방입니다. 공개 방을 보려면 로비를 확인해보세요.',
     'restartInfo' => 'F4 혹은 직접 지정한 키를 눌러 재시작할 수 있습니다.',
     'joinLinkInfo' => '이 방은 비공개 방이며, 여기에 들어오려면 다음의 링크가 필요합니다:',
@@ -90,7 +96,7 @@ return [
     'garbage' => '쓰레기 분배 방식',
     'garbageDelay' => '쓰레기 딜레이',
     'messiness' => '난잡도',
-    'replay' => '다시보기', // 로그인 사용자일 경우의 리플레이 메세지
+    'replay' => '다시보기', // 로그인 사용자일 경우의 다시보기 메세지
     'rep' => 'Rep', //max 3, short for Replay
     'rec' => '받음', //max 4, short for Received
     'enterNullDAS' => 'NullpoMino에서 쓰는 DAS 값을 입력하세요:',
@@ -100,4 +106,15 @@ return [
     'settingsChanged' => '게임 중 설정이 바뀌어서, 다시보기를 저장하지 않습니다.',
     'segment' => '구간',
     'duration' => '길이',
+    'roomFull' => '방이 다 찼습니다.',
+    'lobbyInfo' => '이 채팅은 {discord}와 공유됩니다.',
+    'newHost' => '이제 당신이 방장 입니다.',
+    'badRoom' => '더 이상 존재하지 않는 방입니다, 기본 방을 들어갑니다!',
+    'stngsChanged' => '방장에 의해 설정이 변경되었습니다',
+    'stngsCustom' => '사용자 지정 설정',
+    'aSpec' => '이미 관전 중!',
+    'aPlay' => '이미 풀레이 중!',
+    'repFail' => '다시보기 저장을 실패했습니다.',
+    'repInChat' => '다시보기 파일이 채팅에 덤프 되었습니다. 저장하려면, 박스 내의 텍스트를 복사해서 텍스트 에디터에 붙여넣으세요.',
+    'repTxtInfo' => '복사된 다시보기 파일은 리플레이어에 재생되거나, 경우에 따라서는 웹사이트에 다시 제출 할수있습니다.',
 ];
